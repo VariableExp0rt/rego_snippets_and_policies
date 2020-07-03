@@ -1,0 +1,1 @@
+vulnerabilities = {"dev": {"resource": {"metadata": {"labels": {"starboard.container.name": "nginx"}}}}}
