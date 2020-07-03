@@ -4,7 +4,7 @@
 
 #### Note: In order to enforce policies on "DELETE" operations you will need to edit the ValidatingWebhookConfiguration spec to include this operation.
 
-The folder above for Gatekeeper will be used to provide example rules (outside of those that already exist in the Gatekeeper project repository).
+The folder above for Gatekeeper will be used to provide example rules (outside of those that already exist in the Gatekeeper project repository). I will also be using this folder for testing out the new policy tool "konstraint" by jpreese :) (when I've got some time to be thorough!).
 
 ### Kube-mgmt
 
