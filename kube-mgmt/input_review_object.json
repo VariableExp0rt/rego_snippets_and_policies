@@ -1,0 +1,1 @@
+{request: {object: {spec: {containers: {nginx: {image: nginx}, busybox: {image: busybox}}}}}}
