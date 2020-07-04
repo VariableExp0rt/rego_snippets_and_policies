@@ -17,7 +17,10 @@ Tips:
   - When you replicate data from within the spec of the kube-mgmt container, this overides the label above
   - Verify the data structure of the replicated data using the following from a node (I'm using kind so `docker ps | grep 'control'`;
   `curl -sk https://OPA_SVC_IP/v1/data/kubernetes/<object>` to check it exists, then output that to a file with `| jq .result > <filename>.json` to trim the result off which is part of the REST API's response, `tar cf <filename>.json dir` then `docker cp <container>:<dir> <local_location/name>`, finally `tar cf <local file>` and you can use the normal OPA REPL interface to do some testing `opa run /path/to/test/data`
-  - One that gave me a particularly hard time, but perservered [here](https://play.openpolicyagent.org/p/OWeAygdeMu)
+  - One that gave me a particularly hard time, but perservered and the result is [here](https://play.openpolicyagent.org/p/pcXTjTIni4)
+  - The link to the Playground in the above point also has the unit testing data within
+  - Testing is not as easy as it could be, after unit testing you might want to just run a sidecar container with OPA, configmap in an isolated policy for testing, and go from there - I may explore this in a blog post
+  
   
   
   
